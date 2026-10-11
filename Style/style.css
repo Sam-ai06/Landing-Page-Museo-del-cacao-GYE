@@ -1,29 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
 body {
     background-color: rgb(253, 252, 251);
-    margin: 0px;
+    margin: 0;
 }
-
-.caja-nav{
-    background-image: url('../Imagenes/museo\ del\ cacao\ edificio.jpg');
-    width: 100%;
+#hero {
+    position: relative;   /* referencia para el video */
+    isolation: isolate;   
     height: 600px;
-    background-position: center;
-    background-size: cover;
-    display: inline-block;
-}
-.caja-nav h1{
-    display: flex;
-    justify-content: center;
-    margin-top: 250px;
     color: white;
-    font-size: 90px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Merriweather", serif;
+    
 }
 
-.caja-nav nav ul{
+.video-fondo {
+    position: absolute;
+    inset: 0;             
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#hero nav {
+    padding-top: 0px;   
+}
+
+#hero ul {
     display: flex;
+    align-items: baseline;
+    gap: 25px;
+    margin: 0;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    background-color: rgba(59, 59, 59, 0.267);
+    backdrop-filter: blur(10px);
+}
+
+#hero li {
     list-style: none;
-    gap: 10px;
-    justify-content: center;
+    padding-top: 20px;
 
 }
+
+#hero a {
+    color: white;
+    text-decoration: none;
+}
+
+#logo-museo{
+    padding-top: 310px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    
+}
+
+#logo-museo-nav{
+    height: 50px;
+    margin-right: 15px;
+}
+
+#btn-contacto{
+    position: fixed;
+    margin-left: 85rem;
+    margin-top: 8px;
+    padding: 10px;
+    color: white;
+    background-color:rgba(255, 102, 0, 0);
+    border-radius: 7px;
+    border: 1px solid white;
+    font-size: medium;
+}
+
+#btn-contacto:hover{
+    background-color:rgba(255, 0, 0, 0.26);
+    transition: 0.2s ease-in;
+
+}
+
+
+
+
+
