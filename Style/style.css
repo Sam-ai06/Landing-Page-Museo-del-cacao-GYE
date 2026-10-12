@@ -6,7 +6,7 @@ body {
 }
 #hero {
     position: relative;   /* referencia para el video */
-    isolation: isolate;   
+    isolation: isolate;
     height: 600px;
     color: white;
     font-family: "Merriweather", serif;
@@ -15,7 +15,7 @@ body {
 
 .video-fondo {
     position: absolute;
-    inset: 0;             
+    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -23,7 +23,7 @@ body {
 }
 
 #hero nav {
-    padding-top: 0px;   
+    padding-top: 0px;
 }
 
 #hero ul {
@@ -78,7 +78,87 @@ body {
 
 }
 
+.seccion-inicio-split {
+    padding: 80px 40px;
+    background-color: #fcfbfa;
+}
 
+.contenedor-split {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
+.split-texto {
+    flex: 1;
+}
 
+/* texto pequeño inicio */
+.etiqueta-superior {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #8C4320;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 15px;
+}
 
+/* titulo inicio */
+.split-texto h2 {
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-family: 'Merriweather', serif;
+}
+
+.split-texto h2 .texto-cursivo {
+    display: block;
+    font-style: italic;
+    color: #8C4320;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.split-texto .parrafo-destacado {
+    font-size: 1.1rem;
+    color: #333333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.split-texto p {
+    font-size: 0.95rem;
+    color: #555555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.split-imagen {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* linea lateral inicio */
+.borde-decorativo {
+    position: absolute;
+    left: -20px;
+    top: 10px;
+    bottom: 10px;
+    width: 4px;
+    background-color: #8C4320; /* Color acento */
+}
+
+/* borde imagen principal */
+.split-imagen img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
