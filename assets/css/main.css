@@ -1776,7 +1776,21 @@ button,
       margin: 0 0 2em 0; }
       .posts article .image img {
         display: block;
-        width: 100%; }
+        width: 100%;
+        height: 260px;
+        object-fit: cover; }
+    /*estilo para acomodar 3era tarjeta */
+    .posts article:last-child {
+      width: 100%;
+      max-width: 600px; /* Define un ancho máximo ideal para que la foto y el texto no se estiren demasiado */
+      margin: 0 auto 6em auto; /* Centra toda la tarjeta (imagen + texto) */
+      box-sizing: border-box;
+    }
+    .posts article:last-child .image img {
+      height: 400px;
+      object-fit: cover;
+      width: 60%;
+    }
   @media screen and (min-width: 1681px) {
     .posts article:nth-child(3n + 1):before {
       display: none; }
