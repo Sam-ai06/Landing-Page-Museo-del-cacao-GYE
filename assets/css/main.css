@@ -2244,3 +2244,78 @@ button,
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
+
+/* estilo del formulario - reservar visita */
+.modal-formulario {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10005;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* aparece si hace click */
+.modal-formulario:target {
+    opacity: 1;
+    visibility: visible;
+}
+.modal-contenido {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+#modal-cita .actions {
+    margin-top: 25px; /* Puedes ajustarlo a 25px o 30px según el espacio que prefieras */
+}
+#modal-cita textarea {
+    height: 80px;
+    min-height: auto;
+}
+
+/* mejora la apariencia del campo fecha */
+#modal-cita input[type="date"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #ffffff;
+    border: solid 1px rgba(210, 215, 217, 0.75);
+    border-radius: 0.375em;
+    color: inherit;
+    font-family: inherit;
+    font-size: 1rem;
+    height: 2.75em;
+    padding: 0 1em;
+    width: 100%;
+}
+#modal-cita input[type="date"]:focus {
+    border-color: var(--color-primario);
+    box-shadow: 0 0 0 1px var(--color-primario);
+}
+
+/* cerrar formulario */
+.cerrar-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    color: #3d4449;
+    text-decoration: none;
+    border-bottom: none !important;
+}
+.cerrar-modal:hover {
+    color: var(--color-primario);
+}

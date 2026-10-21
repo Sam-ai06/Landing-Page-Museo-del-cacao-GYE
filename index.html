@@ -43,9 +43,6 @@
                     					la memoria viva de nuestra tierra. Este espacio surge para contar la fascinante travesía de «la pepa de oro», honrando
                     					el esfuerzo de las generaciones pasadas y devolviéndole a la ciudad un punto de encuentro donde el pasado, la cultura y
                     					las tradiciones vuelven a latir con fuerza.</p>
-										<ul class="actions">
-											<li><a href="#" class="button big">Aprender más</a></li>
-										</ul>
 									</div>
 									<span class="image object">
 										<img src="Imagenes\cacao-pixel-art.jpg" alt="cacao hecho pixel art" />
@@ -184,17 +181,66 @@
 										<h2>Visítanos</h2>
 									</header>
 									<p>Planifica tu visita y vive la experiencia de la historia del cacao en el corazón del centro histórico de Guayaquil.</p>
+				
+									<!-- informacion de contacto -->
 									<ul class="contact">
 										<li class="icon solid fa-envelope"><a href="#">museodelcacao@uni.gob.ec</a></li>
 										<li class="icon solid fa-phone">(04) 259-2100</li>
 										<li class="icon solid fa-home">Mar - Dom: 10:00 a 17:00<br />
 										Calle Panamá, Guayaquil, Ecuador</li>
 									</ul>
+
+									<!-- abrir el formulario -->
+									<ul class="actions" style="margin-top: 2em;">
+										<li><a href="#modal-cita" class="button primary fit">Reservar visita</a></li>
+									</ul>
 								</section>
+
+								<!-- ventana del formulario -->
+								<div id="modal-cita" class="modal-formulario">
+									<div class="modal-contenido">
+										<a href="#" class="cerrar-modal">&times;</a>
+										<h3>Reserva tu visita</h3>
+										<p>Llena los datos para confirmar tu visita al museo.</p>
+										
+										<form method="post" action="#">
+											<div class="fields">
+												<div class="field">
+													<label for="nombre-modal">Nombre completo</label>
+													<input type="text" name="nombre" id="nombre-modal" placeholder="Tu nombre y apellido" required />
+												</div>
+												<div class="field half">
+													<label for="correo-modal">Correo electrónico</label>
+													<input type="email" name="correo" id="correo-modal" placeholder="tu@correo.com" required />
+												</div>
+												<div class="field half">
+													<label for="fecha-modal">Fecha de visita</label>
+													<input type="date" name="fecha" id="fecha-modal" required />
+												</div>
+												<div class="field">
+													<label for="tipo-modal">Tipo de recorrido</label>
+														<select name="tipo_visita" id="tipo-modal" required>
+														<option value="" disabled selected>Seleccione un tipo de recorrido</option>
+														<option value="general">Recorrido general</option>
+														<option value="guiada">Recorrido guiado</option>
+													</select>
+												</div>
+												<div class="field">
+													<label for="mensaje">Comentarios</label>
+													<textarea name="mensaje" id="mensaje" rows="4" placeholder="Cuéntanos si vienes engrupo o necesitas ayuda adicional."></textarea>
+												</div>
+											</div>
+											<ul class="actions">
+												<li><input type="submit" value="Confirmar reserva" class="primary" /></li>
+												<li><a href="#" class="button">Cancelar</a></li>
+											</ul>
+										</form>
+									</div>
+								</div>
 
 							<!-- Footer -->
 								<footer id="footer">
-									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+									<p class="copyright">&copy; By: Niurka Roca y Samuel Villagómez: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 								</footer>
 
 						</div>
