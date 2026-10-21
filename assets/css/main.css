@@ -2319,3 +2319,8 @@ button,
 .cerrar-modal:hover {
     color: var(--color-primario);
 }
+
+.mapa{
+  border-radius: 5px;
+  margin-top: -10px;
+}
